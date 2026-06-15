@@ -1,0 +1,140 @@
+.featured-section {
+  width: 100%;
+
+  background: #f4f4f4;
+
+  text-align: center;
+
+  padding: 80px 40px;
+}
+
+.featured-section h2 {
+  font-size: 3rem;
+  font-weight: 700;
+
+  color: #222;
+
+  margin-bottom: 70px;
+}
+
+/* LOGOS */
+
+.featured-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+
+  flex-wrap: wrap;
+
+  margin-bottom: 50px;
+}
+
+.featured-logos img {
+  height: 55px;
+  width: auto;
+
+  opacity: 0.55;
+
+  transition: all 0.4s ease;
+
+  cursor: pointer;
+
+  filter: grayscale(100%);
+}
+
+/* HOVER EFFECT */
+
+.featured-logos img:hover {
+  opacity: 1;
+
+  transform:
+    translateY(-10px)
+    scale(1.08);
+
+  filter: grayscale(0%);
+}
+
+.featured-logos:hover img {
+  opacity: 0.25;
+}
+
+.featured-logos img:hover {
+  opacity: 1;
+  transform: translateY(-10px) scale(1.08);
+}
+
+/* BUTTON */
+
+.featured-section button {
+  background: #f47b20;
+  color: white;
+
+  border: none;
+
+  padding: 10px 30px;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.featured-section button:hover {
+  background: #de6d18;
+}
+
+/* TEXT */
+
+.featured-section p {
+  margin-top: 90px;
+
+  color: #222;
+
+  font-size: 1.4rem;
+}
+
+/* TABLET */
+
+@media (max-width: 992px) {
+
+  .featured-section h2 {
+    font-size: 2.4rem;
+  }
+
+  .featured-logos {
+    gap: 40px;
+  }
+
+  .featured-logos img {
+    height: 45px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .featured-section {
+    padding: 60px 20px;
+  }
+
+  .featured-section h2 {
+    font-size: 2rem;
+  }
+
+  .featured-logos {
+    gap: 25px;
+  }
+
+  .featured-logos img {
+    height: 35px;
+  }
+
+  .featured-section p {
+    font-size: 1.1rem;
+    margin-top: 60px;
+  }
+}

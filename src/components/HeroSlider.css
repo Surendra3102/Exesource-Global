@@ -1,0 +1,249 @@
+.hero-swiper {
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-slide {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 140px;
+
+  overflow: hidden;
+}
+
+
+/* CONTENT */
+
+.hero-content {
+  width: 420px;
+  z-index: 5;
+}
+
+.hero-content h2 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  line-height: 1.15;
+  color: #111;
+  margin: 0;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #f47b20;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #222;
+  margin-top: 20px;
+}
+
+.small-text {
+  font-size: 1.1rem;
+}
+
+/* BUTTON */
+
+.hero-content button {
+  margin-top: 30px;
+  padding: 14px 32px;
+
+  background: #f47b20;
+  border: none;
+
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-content button:hover {
+  background: #de6d18;
+}
+
+/* ORANGE TEXT */
+
+.orange {
+  color: #f47b20 !important;
+}
+
+/* DOTS */
+
+.dot-pattern {
+  position: absolute;
+  top: 7rem;
+  right: 80px;
+
+  width: 170px;
+
+  z-index: 2;
+}
+
+/* ARROWS */
+
+.arrow-pattern {
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+
+  width: 400px !important;
+  opacity: 6.5;
+
+  z-index: 2;
+  opacity: 0.5;
+
+  animation: arrowMove 2.5s linear infinite;
+}
+
+@keyframes arrowMove {
+  0% {
+    transform: translateX(-15px);
+  }
+
+  100% {
+    transform: translateX(15px);
+  }
+}
+
+/* PODCAST ICONS */
+
+.platforms {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.platforms img {
+  height: 45px;
+  width: auto;
+}
+
+/* PAGINATION */
+
+.swiper-pagination {
+  bottom: 25px !important;
+}
+
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+
+  background: #c8c8c8;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #f47b20;
+}
+
+/* TABLET */
+
+@media (max-width: 992px) {
+  .hero-slide {
+    padding-left: 60px;
+    padding-right: 40px;
+  }
+
+  .hero-content {
+    width: 90%;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 3.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+
+  .dot-pattern {
+    display: none;
+  }
+
+  .arrow-pattern {
+    width: 320px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .hero-slide {
+    padding-left: 30px;
+    padding-right: 30px;
+    justify-content: center;
+  }
+
+  .hero-content {
+    width: 100%;
+  }
+
+  .hero-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .hero-content button {
+    width: 220px;
+  }
+
+  .dot-pattern,
+  .arrow-pattern {
+    display: none;
+  }
+
+  .platforms {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .platforms img {
+    height: 35px;
+  }
+  
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+  .hero-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content button {
+    width: 100%;
+  }
+}
