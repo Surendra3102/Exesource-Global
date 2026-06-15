@@ -8,7 +8,7 @@ import Services from "../components/Services";
 import AdeptSlider from "../components/AdeptSlider";
 import BlogSection from "../components/BlogSection";
 import CVSection from "../components/CVSection";
-import FeaturedIn from "../components/featuredIn";
+import FeaturedIn from "../components/FeaturedIn";
 import Footer from "../components/Footer";
 
 function Home() {
