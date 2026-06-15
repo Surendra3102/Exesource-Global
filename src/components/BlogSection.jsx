@@ -1,5 +1,5 @@
 import "./BlogSection.css";
-import blogBg from "../assets/blog-bg.jpg";
+import blogBg from "../assets/Blog-bg.jpg";
 
 function BlogSection() {
   return (
