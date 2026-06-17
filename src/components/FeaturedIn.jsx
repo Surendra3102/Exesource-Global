@@ -2,7 +2,7 @@ import "./FeaturedIn.css";
 
 import businessLine from "../assets/Business-Line-bw.png";
 import liveMint from "../assets/live-mint.png";
-import economicTimes from "../assets/Economic-times.JPG";
+import economicTimes from "../assets/Economic-times.jpg";
 import moneyControl from "../assets/Money-control.png";
 import toi from "../assets/Times-of-India.webp";
 
