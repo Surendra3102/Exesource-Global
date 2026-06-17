@@ -1,11 +1,10 @@
 .featured-section {
   width: 100%;
-
   background: #f4f4f4;
 
   text-align: center;
 
-  padding: 80px 40px;
+  padding: 90px 40px;
 }
 
 .featured-section h2 {
@@ -14,7 +13,7 @@
 
   color: #222;
 
-  margin-bottom: 70px;
+  margin-bottom: 60px;
 }
 
 /* LOGOS */
@@ -23,45 +22,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 70px;
-
   flex-wrap: wrap;
+
+  gap: 60px;
 
   margin-bottom: 50px;
 }
 
 .featured-logos img {
-  height: 55px;
+  max-height: 55px;
   width: auto;
 
-  opacity: 0.55;
-
-  transition: all 0.4s ease;
+  object-fit: contain;
 
   cursor: pointer;
 
+  opacity: 0.6;
+
   filter: grayscale(100%);
+
+  transition: all 0.4s ease;
 }
 
-/* HOVER EFFECT */
-
-.featured-logos img:hover {
-  opacity: 1;
-
-  transform:
-    translateY(-10px)
-    scale(1.08);
-
-  filter: grayscale(0%);
-}
+/* Fade Others */
 
 .featured-logos:hover img {
   opacity: 0.25;
 }
 
+/* Active Logo */
+
 .featured-logos img:hover {
   opacity: 1;
-  transform: translateY(-10px) scale(1.08);
+
+  filter: grayscale(0%);
+
+  transform: translateY(-8px) scale(1.08);
 }
 
 /* BUTTON */
@@ -72,33 +68,40 @@
 
   border: none;
 
-  padding: 10px 30px;
+  padding: 12px 32px;
 
-  font-size: 1rem;
+  font-size: 15px;
   font-weight: 700;
 
   cursor: pointer;
 
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 .featured-section button:hover {
   background: #de6d18;
+
+  transform: translateY(-3px);
 }
 
 /* TEXT */
 
 .featured-section p {
-  margin-top: 90px;
+  margin-top: 70px;
 
   color: #222;
 
-  font-size: 1.4rem;
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 /* TABLET */
 
 @media (max-width: 992px) {
+
+  .featured-section {
+    padding: 80px 30px;
+  }
 
   .featured-section h2 {
     font-size: 2.4rem;
@@ -109,7 +112,11 @@
   }
 
   .featured-logos img {
-    height: 45px;
+    max-height: 45px;
+  }
+
+  .featured-section p {
+    font-size: 1.1rem;
   }
 }
 
@@ -123,18 +130,42 @@
 
   .featured-section h2 {
     font-size: 2rem;
+
+    margin-bottom: 40px;
   }
 
   .featured-logos {
-    gap: 25px;
+    gap: 28px;
   }
 
   .featured-logos img {
-    height: 35px;
+    max-height: 38px;
+  }
+
+  .featured-section button {
+    width: 180px;
   }
 
   .featured-section p {
-    font-size: 1.1rem;
-    margin-top: 60px;
+    font-size: 1rem;
+
+    margin-top: 50px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 480px) {
+
+  .featured-logos {
+    gap: 20px;
+  }
+
+  .featured-logos img {
+    max-height: 30px;
+  }
+
+  .featured-section h2 {
+    font-size: 1.7rem;
   }
 }

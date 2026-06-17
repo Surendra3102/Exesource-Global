@@ -2,9 +2,9 @@ import "./FeaturedIn.css";
 
 import businessLine from "../assets/Business-Line-bw.png";
 import liveMint from "../assets/live-mint.png";
-import economicTimes from "../assets/Economic-times.png";
+import economicTimes from "../assets/Economic-times.JPG";
 import moneyControl from "../assets/Money-control.png";
-import toi from "../assets/Times-of-India.png";
+import toi from "../assets/Times-of-India.webp";
 
 function FeaturedIn() {
   return (

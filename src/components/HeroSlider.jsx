@@ -61,7 +61,7 @@ function HeroSlider() {
             className="dot-pattern"
           />
 
-          <div className="hero-content">
+          <div className="hero-content team-mobile">
             <h2>TRANSFORMING</h2>
 
             <h2>YOUR TEAM TO AN</h2>
@@ -96,7 +96,7 @@ function HeroSlider() {
             className="dot-pattern"
           />
 
-          <div className="hero-content">
+          <div className="hero-content mobile-careers">
             <h2>FIND YOUR FIT</h2>
 
             <h2>IN AN</h2>
